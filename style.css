@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/*the * is for targeting the whole page*/
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+/*its going to scroll down smothly rather than going to links instatly*/
 html {
   scroll-behavior: smooth;
 }
@@ -20,13 +21,14 @@ p {
 }
 
 /* TRANSITION */
-
+/*change between 2 styles for buttons*/
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
+/*flexed the whole navigation bar to horizontal*/
 
 nav,
 .nav-links {
@@ -36,15 +38,17 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 17vh;    /* takes 17% of the screen*/
 }
 
+/*spacing for nav bar*/
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
 
+/*styling the link element*/
 a {
   color: black;
   text-decoration: none;
