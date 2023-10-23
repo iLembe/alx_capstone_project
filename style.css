@@ -462,6 +462,7 @@ footer {
 footer nav{
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 footer p {
