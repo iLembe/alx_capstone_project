@@ -425,6 +425,18 @@ article .icon {
   height: 2.5rem;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+}
+
+
+/*
 form button{
   display: flex;
   color: rgb(53,53,53);
@@ -435,7 +447,7 @@ form input{
   display: flex;
   color: rgb(129, 124, 124);
   margin: auto;
-}
+}*/
 
 
 /* FOOTER SECTION */
