@@ -362,6 +362,7 @@ article .icon {
 
 #projects {
   position: relative;
+  height: 60vh;
 }
 
 .color-container {
