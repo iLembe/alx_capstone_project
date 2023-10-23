@@ -425,18 +425,6 @@ article .icon {
   height: 2.5rem;
 }
 
-form {
-  display: flex;
-  margin:  auto;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  align-items: center;
-  
-}
-
-
-
 /* FOOTER SECTION */
 
 footer {
