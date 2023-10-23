@@ -459,6 +459,11 @@ footer {
   margin: 0 1rem;
 }
 
+footer nav{
+  display: flex;
+  justify-content: center;
+}
+
 footer p {
   text-align: center;
 }
