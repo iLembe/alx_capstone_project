@@ -435,23 +435,6 @@ form {
   
 }
 
-form label{
-  display: flex;
-  color: rgb(53, 53, 53);
-  margin: auto;
-}
-
-form button{
-  display: flex;
-  color: rgb(53,53,53);
-  margin: auto;
-}
-
-form input{
-  display: flex;
-  color: rgb(129, 124, 124);
-  margin: auto;
-}
 
 
 /* FOOTER SECTION */
