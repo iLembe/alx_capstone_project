@@ -390,7 +390,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 60vh;
+  height: 70vh;
 }
 
 .contact-info-upper-container {
@@ -453,7 +453,7 @@ form input{
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 20vh;
   margin: 0 1rem;
 }
 
