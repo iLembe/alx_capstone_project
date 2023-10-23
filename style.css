@@ -427,6 +427,7 @@ article .icon {
 form {
   display: flex;
   margin: auto;
+  justify-content: center;
 }
 
 form label{
