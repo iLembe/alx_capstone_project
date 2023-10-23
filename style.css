@@ -426,12 +426,12 @@ article .icon {
 }
 
 form {
-  order: -1;
   display: flex;
-  margin: auto;
+  margin: 2rem auto;
   justify-content: center;
   flex-direction: column;
   position: absolute;
+  align-items: center;
   
 }
 
