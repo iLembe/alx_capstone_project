@@ -428,6 +428,7 @@ form {
   display: flex;
   margin: auto;
   justify-content: center;
+  flex-direction: column;
 }
 
 form label{
