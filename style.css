@@ -393,7 +393,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 90vh;
-  position: relative;
+  
 }
 
 .contact-info-upper-container {
@@ -451,6 +451,21 @@ form textarea {
 
 form button {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  form label {
+    font-size: 1rem; /* Adjust the font size */
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem; /* Adjust the font size */
+  }
+  
+  form button {
+    margin-top: 0.5rem; /* Adjust the margin for mobile button */
+  }
 }
 
 
