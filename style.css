@@ -451,6 +451,14 @@ form input{
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  /* Set the position and z-index for the contact section */
+  #contact {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 
 /* FOOTER SECTION */
 
@@ -468,3 +476,4 @@ footer nav{
 footer p {
   text-align: center;
 }
+
