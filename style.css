@@ -441,6 +441,12 @@ form button{
   margin: auto;
 }
 
+form input{
+  display: flex;
+  color: rgb(129, 124, 124);
+  margin: auto;
+}
+
 
 /* FOOTER SECTION */
 
