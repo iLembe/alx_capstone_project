@@ -436,7 +436,6 @@ form button{
   display: flex;
   color: rgb(53,53,53);
   margin: auto;
-  flex-direction: row;
 }
 
 form input{
@@ -456,10 +455,11 @@ footer {
 footer nav{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  gap: 1;
 }
 
 footer p {
   text-align: center;
+  
 }
 
