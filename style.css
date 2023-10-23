@@ -429,6 +429,13 @@ form {
   margin: auto;
 }
 
+form button{
+  display: flex;
+  color: rgb(53,53,53);
+  margin: auto;
+
+}
+
 
 /* FOOTER SECTION */
 
