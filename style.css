@@ -429,7 +429,7 @@ article .icon {
 form label{
   display: flex;
   color: rgb(53, 53, 53);
-  margin: auto;
+  margin: 1rem;
 }
 
 form button{
