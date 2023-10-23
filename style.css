@@ -362,7 +362,7 @@ article .icon {
 
 #projects {
   position: relative;
-  height: 60vh;
+  
 }
 
 .color-container {
@@ -393,6 +393,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 90vh;
+  position: relative;
 }
 
 .contact-info-upper-container {
