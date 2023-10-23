@@ -429,6 +429,7 @@ form {
   margin: auto;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 form label{
@@ -453,7 +454,7 @@ form input{
 /* FOOTER SECTION */
 
 footer {
-  height: 20vh;
+  height: 25vh;
   margin: 0 1rem;
 }
 
