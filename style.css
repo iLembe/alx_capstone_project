@@ -371,8 +371,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 .project-title {
@@ -391,7 +391,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 65vh;
+  height: 70vh;
 }
 
 .contact-info-upper-container {
