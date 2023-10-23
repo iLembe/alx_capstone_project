@@ -430,7 +430,7 @@ form {
   margin: auto;
   justify-content: center;
   flex-direction: column;
-  position: relative;
+  
 }
 
 form label{
