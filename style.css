@@ -424,6 +424,10 @@ article .icon {
   height: 2.5rem;
 }
 
+form {
+  display: flex;
+  margin: auto;
+}
 
 
 /* FOOTER SECTION */
