@@ -453,15 +453,6 @@ form input{
   margin: auto;
 }
 
-@media (max-width: 768px) {
-  /* Set the position and z-index for the contact section */
-  #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 
 /* FOOTER SECTION */
 
