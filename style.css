@@ -425,12 +425,20 @@ article .icon {
   height: 2.5rem;
 }
 
+.label-name {
+  display: flex;
+  color: rgb(53, 53, 53);
+}
+.label-email{
+  display: flex;
+  color: rgb(53, 53, 53);
+}
 
-form label{
+/*form label{
   display: flex;
   color: rgb(53, 53, 53);
   margin: 1rem;
-}
+}*/
 
 form button{
   display: flex;
