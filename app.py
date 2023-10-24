@@ -13,7 +13,7 @@ EMAIL_PASSWORD = '0712380500'
 def index():
     return render_template('index.html')       # Render to my homepage (My Portfolio)
 
-@app.route('/submit_form_endpoint', methods=['POST'])
+@app.route('https://serene-tartufo-fdb9d2.netlify.app/submit_form_endpoint', methods=['POST'])
 def submit_form():
     if request.method == 'POST':
         name = request.form['name']                  # Get 'name' from the form on homepage
