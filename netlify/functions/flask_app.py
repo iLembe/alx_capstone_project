@@ -11,6 +11,7 @@ EMAIL_PASSWORD = '0712380500'
 
 @app.route('/')
 def index():
+    print(request.args)
     return render_template('index.html')       # Render to my homepage (My Portfolio)
 
 @app.route('/.netlify/functions/submit_form_endpoint', methods=['POST', 'GET'])
