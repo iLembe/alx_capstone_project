@@ -1,41 +1,38 @@
 from flask import Flask, request, render_template, redirect, url_for
-import smtplib
+from flask_migrate import Migrate
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///formdata.db'  # Configuring SQLite database
+db = SQLAlchemy(app)                                             # Initialize SQLAlchemy
+Migrate=Migrate(app, db)
 
-# My actual email credentials {Classified}
-SMTP_SERVER = 'smtp.gmail.com'
-SMTP_PORT = 587
-EMAIL_ADDRESS = 'mondli99zulu@gmail.com'
-EMAIL_PASSWORD = '0712380500'
+# A python class Defining a model for the form data(represents the structure of the table to store data)
+class FormData(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    email = db.Column(db.String(100))
+    message = db.Column(db.Text)
 
 @app.route('/')
 def index():
-    print(request.args)
     return render_template('index.html')       # Render to my homepage (My Portfolio)
 
-@app.route('/submit_form_endpoint', methods=['POST', 'GET'])
+@app.route('/submit_form_endpoint', methods=['POST'])
 def submit_form():
     if request.method == 'POST':
-        name = request.form['name']                  # Get 'name' from the form on homepage
-        email = request.form['email']                # Get 'email' from the form on homepage
-        message = request.form['message']            # Get 'message' from the form on homepage
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
 
-        try:
-            # Send an email with the form data
-            subject = f'New Contact Form Submission from {name}'
-            body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
-            message = f'Subject: {subject}\n\n{body}'
+        # Create a new FormData object with form data
+        form_data = FormData(name=name, email=email, message=message)
 
-            server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-            server.starttls()
-            server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-            server.sendmail(EMAIL_ADDRESS, EMAIL_ADDRESS, message)
-            server.quit()
+        # Add the object to the session and commit it to the database
+        db.session.add(form_data)
+        db.session.commit()
 
-            return redirect(url_for('index'))          # Redirect to my homepage after submission
-        except Exception as e:
-            return f"An error occurred: {e}"           #Display an Error Message !
+        return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)               # Run the Flask app in debug mode if this script is executed directly
+    app.run(debug=True)  # Run the Flask app in debug mode if executed directly
