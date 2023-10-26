@@ -14,7 +14,7 @@ def index():
     print(request.args)
     return render_template('index.html')       # Render to my homepage (My Portfolio)
 
-@app.route('/.netlify/functions/submit_form_endpoint', methods=['POST', 'GET'])
+@app.route('/submit_form_endpoint', methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
         name = request.form['name']                  # Get 'name' from the form on homepage
