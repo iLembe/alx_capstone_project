@@ -8,15 +8,8 @@
 >JavaScript
 >API.
 
-
-**Features and funtionality :**
->
-
-**demo:**
->
-
 **Future enhancements for the Project :**
->
+>Adding A new project I'll start before November ends on the projects section.
 
 **Contact information:**
 > Mondli Zulu
